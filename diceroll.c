@@ -6,11 +6,17 @@ int main(){
   char enter1,enter2;
   int i;
   int input1,input2;
+  char name[20];
 
+  printf("What is your name?\n> ");
+  scanf("%s",name);
+  printf("Hello, %s!\n\n",name);
+
+  
   srand((unsigned)time(NULL));
 
   printf("Rolling the dice...\n");
-  printf("Press enter key two times: ");
+  printf("Press enter key...");
   scanf("%c",&enter1);
   scanf("%c",&enter2);
   if(enter1 == '\n' && enter2 == '\n'){
